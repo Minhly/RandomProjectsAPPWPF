@@ -1,0 +1,22 @@
+﻿<Window x:Class="WPF_Login_Screen_SQL.LoginScreen"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_Login_Screen_SQL"
+        mc:Ignorable="d"
+        Title="Login" Height="319" Width="300" Background="DodgerBlue">
+    <Border Background="Wheat" CornerRadius="20" Margin="20">
+    <StackPanel >
+            <Label Content="Login" Foreground="LightSeaGreen" FontSize="25" HorizontalAlignment="Center"/>
+            <Separator></Separator>
+            <Label Content="Username" Foreground="LightSeaGreen"/>
+            <TextBox Name="txtUsername" Background="LightSeaGreen" Foreground="Beige" FontSize="18" Padding="2"/>
+            <Label Content="Password" Foreground="LightSeaGreen"/>
+            <PasswordBox Name="txtPassword" PasswordChar="$" Background="LightSeaGreen" Foreground="Beige" FontSize="18" Padding="2"/>
+            <Button Name="btnSubmit" IsDefault="True" Click="btnSubmit_Click" Content="Submit" Background="LightSeaGreen" Foreground="Beige" FontSize="18" Margin="60 10"/>
+
+
+        </StackPanel>
+    </Border>
+</Window>
